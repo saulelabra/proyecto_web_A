@@ -20,7 +20,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Principal <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -35,23 +35,39 @@
                             <a class="dropdown-item" href="#">Agua</a>
                             <a class="dropdown-item" href="#">Luz</a>
                         </div>
-                    </div>
+                    </div>     
                 </li>
             </ul>
         </div>
     </nav>
     <br>
-    <div class="pl-5">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Escoga mapa de área afectada
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Reportes de luz</a>
-                <a class="dropdown-item" href="#">Reportes de agua</a>
-            </div>
+
+    <div class="row">
+        <div class="col-sm-2 pl-5">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Delegación
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Alvaro Obregón</a>
+                    <a class="dropdown-item" href="#">Cuajimalpa</a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="col-sm-1">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Colonia
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Colonia A</a>
+                    <a class="dropdown-item" href="#">Colonia B</a>
+                </div>
+            </div>            
         </div>
     </div>
+
     <br>
     <div class="container-fluid">
         <iframe 
