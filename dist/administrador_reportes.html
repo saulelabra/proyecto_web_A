@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-        <title>Administrador Organizaciones</title>
+        <title>Administrador Reportes</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,46 +16,51 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Empleados <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Reportes</a>
+                    <a class="nav-link active" href="#">Reportes</a>
                 </li>
             </ul>
         </div>
     </nav>
         <div class="container-fluid">
             <div class = "page-header">
-               <h1>
-                  Empleados por Organización
-               </h1>
+               <h1>Reportes por día</h1>
             </div>
             <br>
             <div class="module">
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle bg-success" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Organizaciones
+                    Fecha
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">CFE</a>
-                    <a class="dropdown-item" href="#">CNA</a>
+                    <a class="dropdown-item" href="#">11/06/19</a>
+                    <a class="dropdown-item" href="#">12/06/19</a>
+                    <a class="dropdown-item" href="#">13/06/19</a>
                   </div>
                 </div>
                 <br>
                 <table class = "table">
                 <tr>
-                    <th>Nombre Completo del Empleado</th>
-                    <th>Usuario</th>
-                    <th> Foto del Empleado</th>
+                    <th>ID del reporte</th>
+                    <th>Usuario que hizo el reporte</th>
+                    <th>Delegación</th>
+                    <th>Comentario</th>
+                    <th>Estado</th>
                     <th> </th>
                 </tr>
                 <tr>
-                    <td>José Ramirez Cruz</td>
-                    <td>JoseRamirezC@CFE.com</td> 
+                    <td>34861957</td>
+                    <td>José Ramirez Cruz</td> 
+                    <td>Álvaro Obregón</td> 
+                    <td>Se cayó un poste de luz</td>
                     <td>
-                        <img src="img/foto2.png" class="img-fluid img-thumbnail" alt="Foto">
-                    </td> 
+                        <div class="col-sm col-lg bg-warning rounded">
+                            Reportado
+                        </div>
+                    </td>
                     <td>
                         <button type="button" class="btn btn-outline-primary btn-lg" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -63,11 +68,15 @@
                     </td>
                 </tr>
                  <tr>
-                    <td>Rodrigo García Mayo</td>
-                    <td>RodGarciaMayoC@CFE.com</td> 
+                    <td>26675657</td>
+                    <td>Rodrigo García Mayo</td> 
+                    <td>Benito Juárez</td> 
+                    <td>Se cayó un poste de luz</td>
                     <td>
-                        <img src="img/foto2.png" class="img-fluid img-thumbnail" alt="Foto">
-                    </td> 
+                        <div class="col-sm col-lg bg-success rounded">
+                            Completado
+                        </div>
+                    </td>
                     <td>
                         <button type="button" class="btn btn-outline-primary btn-lg" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
