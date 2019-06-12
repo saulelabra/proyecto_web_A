@@ -39,8 +39,8 @@
     </nav>
     <br>
 
-    <div class="d-flex flex-row pl-2">
-        <div class="dropdown">
+    <div class="d-flex flex-row pl-3">
+        <div class="dropdown pr-2">
             <button class="btn btn-primary dropdown-toggle bg-success" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Delegación
             </button>
@@ -70,10 +70,18 @@
     </div>
 
     <br>
-    <form class="px-5">
-        <div class="form-group">
-            <h3>Ingresa tu INE:</h3>
-            <input type="file" class="form-control-file">
+    <form class="px-2">
+        <div class="form-group col-md-6 col-lg-6">
+            <h3>Ingresa tu INE:</h3>           
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+            </div>
             <br><small>*Sera usada unicamente para identificar la persona que reporta el problema</small>
             <br><h3 >Comentarios:</h3>
             <input class="form-control" placeholder="Ingresa tu comentario">
