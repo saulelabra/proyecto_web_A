@@ -90,10 +90,26 @@
                 <input class="form-control" placeholder="Ingresa tu comentario">
             </div>
             <div>
-                <button type="submit" class="btn btn-primary btn-sx">Ingresar reporte</button>
+                <button type="button" id="myBtn" class="btn btn-primary btn-sx">Ingresar reporte</button>
+            </div>
+            <div class="toast">
+                <div class="toast-header">
+                  Toast Header
+                </div>
+                <div class="toast-body">
+                  Some text inside the toast body
+                </div>
+              </div>
             </div>
         </form>
     </div>
+    <script>
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $('.toast').toast('show');
+          });
+        });
+        </script>
     <script src="./bundle.js"></script>
 </body>
 
