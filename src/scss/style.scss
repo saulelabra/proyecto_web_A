@@ -32,11 +32,6 @@
     overflow-x: scroll;
 }
 
-$custom-file-text: (
-    es: "Elegir",
-    en: "Browsear"
-);
-
 @mixin small {
     @media(max-width:767px) {
         @content;
